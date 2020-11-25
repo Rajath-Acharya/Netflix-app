@@ -1,0 +1,10 @@
+@mixin navbar($width) {
+  object-fit: contain;
+  position: fixed;
+  width: $width;
+}
+@mixin font_fam($weight, $size) {
+  font-family: "Cairo", sans-serif;
+  font-weight: $weight;
+  font-size: $size;
+}

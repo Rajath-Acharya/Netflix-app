@@ -1,0 +1,50 @@
+@import "./_mixin";
+@import "./_background";
+.banner-background {
+  color: #fff;
+  object-fit: contain;
+  height: 450px;
+  .banner-inside {
+    margin-left: 30px;
+    padding-top: 140px;
+    height: 190px;
+  }
+  .banner-title {
+    @include font_fam(600, 3rem);
+    padding-bottom: 0.3rem;
+  }
+  .banner-description {
+    @include font_fam(600, 0.8rem);
+    width: 45rem;
+    line-height: 1.3;
+    padding-top: 1rem;
+
+    max-width: 360px;
+    height: 80px;
+  }
+  .banner-button {
+    @include font_fam(700, 0.9rem);
+    color: #fff;
+    background-color: rgba(51, 51, 51, 0.5);
+    outline: none;
+    border: none;
+    letter-spacing: 1.4px;
+    border-radius: 0.2vw;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    margin-right: 1rem;
+    &:hover {
+      color: #000;
+      background-color: #e6e6e6;
+      transition: all 0.23s;
+    }
+  }
+  .banner-fade {
+    height: 8rem;
+    background-image: linear-gradient(
+      180deg,
+      transparent,
+      rgba(36, 36, 36, 0.6),
+      $background
+    );
+  }
+}

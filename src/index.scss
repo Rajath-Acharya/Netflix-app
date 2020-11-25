@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap");
+@import "./sass/_banner";
+@import "./sass/_navbar";
+@import "./sass/_background";
+@import "./sass/_mixin";
+@import "./sass/_auth";
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  letter-spacing: 2.1px;
+}
+.list-main {
+  color: #fff;
+  margin-left: 20px;
+  .list-images-main {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+    &::-webkit-scrollbar {
+      width: 0;
+      background: transparent;
+    }
+    .list-images {
+      object-fit: contain;
+      width: 100%;
+      max-height: 200px;
+      margin-right: 14px;
+      opacity: 0.9;
+      transition: transform 450ms;
+      &:hover {
+        transform: scale(1.08);
+        opacity: 1;
+      }
+    }
+    .list-backdrop {
+      max-height: 250px;
+      &:hover {
+        transform: scale(1.09);
+      }
+    }
+  }
+}

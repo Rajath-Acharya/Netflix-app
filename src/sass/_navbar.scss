@@ -1,0 +1,29 @@
+@import "./_mixin";
+@import "./_background";
+.navbar-main {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+  .navbar-logo {
+    @include navbar(90px);
+    padding: 5px 20px 10px 20px;
+    left: 20px;
+  }
+  .navbar-icon {
+    @include navbar(33px);
+    right: 20px;
+    padding: 20px;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+.navbar-background {
+  padding-bottom: 56px;
+  background-color: $background;
+}
